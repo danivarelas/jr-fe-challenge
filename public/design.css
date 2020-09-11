@@ -1,4 +1,6 @@
 body {
+    background-color: #FFFFFF;
+    width: 100%;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -11,6 +13,7 @@ body {
 }
 
 .navbar-content {
+    padding: 1em;
     display: inline-block;
     width: 50%;
 }
@@ -143,23 +146,30 @@ body {
 }
 
 .search-box {
+    outline: none;
+    font-size: 1em;
     width: 100%;
-    padding: 1.6em 0.5em;
+    padding: 1.1em 0.5em;
     border: 2px solid #FFFFFF;
     border-radius: 3px;
     box-sizing: border-box;
 }
 
 .search-box:focus {
-    width: 100%;
-    padding-top: 2.2em;
-    padding-bottom: 1.0em;
+    padding-top: 1.7em;
+    padding-bottom: 0.5em;
     transition: 0.2s;
     transition-timing-function: ease;
     transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
+.search-box:not(:placeholder-shown) {
+    padding-top: 1.7em;
+    padding-bottom: 0.5em;
+}
+
 .placeholder {
+    font-size: 0.8em;
     pointer-events: none;
     position:absolute;
     top: 1.5em;
@@ -180,7 +190,7 @@ body {
     transform: scale(0.75) translateY(-100%);
 }
 
-.search-box:focus {
+.valid {
     border: 2px solid #F6BC25;
 }
 
@@ -274,7 +284,6 @@ body {
 .grid-item-text {
     grid-column: 2 / 4;
     grid-row: 1 / span 3;
-    margin: auto;
 }
 
 .grid-item-text h3{
@@ -360,4 +369,85 @@ body {
 
 .info-field p{
     margin: 0.5em 0;
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+
+}
+
+@media (max-width: 320px) {
+    .navbar-content, .content, .footer-content {
+        box-sizing: border-box;
+        width: 100%;    
+    }
+
+    .search-container, .information-container {
+        padding: 2em 0;
+    }
+
+    .flex-form {
+        display: inline;
+        margin: 0.5em 1em;
+    }
+
+    .search-bar {
+        width: 80%;
+    }
+
+    .search-box {
+        display: inline;
+    }
+
+    .search-button {
+        width: 100%;
+        padding: 0.8em;
+    }
+
+    .features-grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .grid-item {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    .grid-item-number {
+        margin: 0 0.5em;
+        grid-row: 1;
+        font-size: 2em;
+        width: 50px;
+        height: 50px;
+    }
+
+    .grid-item-text {
+        grid-column: 2 / 4;
+        grid-row: 1 / span 2;
+    }
+
+    .footer-content {
+        display: grid;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .footer-description {
+        margin: 0 1em;
+        text-align: left;
+        grid-row: 1;
+    }
+    
+    .footer-terms {
+        margin: 0 1em;
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+        grid-row: 2;
+    }
+
+    .footer-terms-links {
+        margin: 0;
+    }
 }

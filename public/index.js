@@ -27,9 +27,36 @@ function createNumberedList() {
 
 function validateEmail(e) {
     e.preventDefault();
-    email = document.getElementById("email").value;
+    let email = document.getElementById("email");
+    let placeholder = document.getElementById("placeholder");
+    if (!email.value) {
+        placeholder.style.color = "#9B9B9B";
+        placeholder.innerHTML = "EMAIL";
+        email.className = "search-box"
+    } else if (validateEmailRegex(email.value)){
+        placeholder.style.color = "#9B9B9B";
+        placeholder.innerHTML = "EMAIL";
+        email.className = "search-box valid"
+    } else {
+        placeholder.style.color = "#DC0015";
+        placeholder.innerHTML = "Please add a valid email address";
+        email.className = "search-box"
+    }
+    
+}
+
+function validateEmailRegex(email) {
+    if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) {
+        return true;
+    }
+    return false;
+}
+
+function submitEmail(e) {
+    e.preventDefault();
+    let email = document.getElementById("email").value;
     //searchEmail(email);
-    searchEmail2(email);
+    searchEmail(email);
 }
 
 function searchEmail(email) {
@@ -61,4 +88,5 @@ function displaySuccessfulResult() {
 function displayEmptyResult() {
     alert("No results were found for this email.");
 }
+
 createNumberedList();
