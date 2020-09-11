@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="design.css"/>
+    <link rel="stylesheet" type="text/css" href="design.css" />
     <title>Landing Page</title>
 </head>
 
@@ -12,20 +12,21 @@
     <nav class="navbar">
         <div class="navbar-content">
             <div class="navbar-logo">
-                <img src="./images/PNGs/Logo@2x.png" class="logo"/>
+                <img src="images/PNGs/Logo@2x.png" class="logo" />
             </div>
             <div class="navbar-icons">
-                <img src="./images/PNGs/icn_search@2x.png" class="icon"/>
-                <img src="./images/PNGs/icn_person@2x.png" class="icon"/>
+                <img src="images/PNGs/icn_search@2x.png" class="icon" />
+                <img src="images/PNGs/icn_person@2x.png" class="icon" />
             </div>
         </div>
     </nav>
-    
+
     <div class="search-container">
         <div class="content">
             <div class="title-container">
                 <h1 class="title title-white">Search Any Email Address</h1>
-                <p class="description"><span class="description-gold">Start Here</span> - Look up the owner's name, photos and online profiles. See what you find!</p>
+                <p class="description"><span class="description-gold">Start Here</span> - Look up the owner's name,
+                    photos and online profiles. See what you find!</p>
             </div>
             <div class="search-bar">
                 <form class="flex-form">
@@ -36,57 +37,39 @@
                     <button type="submit" class="search-button">GO!</button>
                 </form>
                 <div>
-                    <img src="./images/PNGs/lock@2x.png" class="icon lock"/>
-                <p class="notice">Enter Any Email Address. They won't be notified.</p>
+                    <img src="images/PNGs/lock@2x.png" class="icon lock" />
+                    <p class="notice">Enter Any Email Address. They won't be notified.</p>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="information-container">
-        <h2>Reverse Email Lookup</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <ul class="feature-items">
-            <li>
-                <span>1</span>
-                <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
-            <li>
-                <span>2</span>
-                <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
-            <li>
-                <span>3</span>
-                <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
-            <li>
-                <span>4</span>
-                <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
-            <li>
-                <span>5</span>
-                <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
-            <li>
-                <span>6</span>
-                <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
-        </ul>
+        <div class="content">
+            <h2 class="title title-blue">Reverse Email Lookup</h2>
+            <p class="description description-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+            <ul id="features-grid" class="features-grid">
+                
+            </ul>
+        </div>
     </div>
     <footer class="footer">
-        <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <div>
-            <p><a href="#">Terms</a><span> | </span><a href="#">Privacy</a></p>
+        <div class="footer-content">
+            <div class="footer-description">
+                <p class="footer-description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat.</p>
+            </div>
+            <div class="footer-terms">
+                <p class="footer-terms-links">
+                    <a href="#">Terms</a><span> | </span><a href="#">Privacy</a>
+                </p>
+            </div>
         </div>
     </footer>
-    
+
     <script src="/__/firebase/7.19.1/firebase-app.js"></script>
     <script src="/__/firebase/init.js"></script>
     <script src="index.js"></script>
