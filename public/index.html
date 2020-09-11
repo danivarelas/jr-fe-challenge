@@ -29,10 +29,10 @@
                     photos and online profiles. See what you find!</p>
             </div>
             <div class="search-bar">
-                <form class="flex-form" onsubmit="validateEmail(event)">
+                <form class="flex-form" onsubmit="submitEmail(event)">
                     <div class="search-box-container">
-                        <input id="email" type="email" class="search-box" placeholder=" ">
-                        <span class="placeholder">EMAIL</span>
+                        <input id="email" type="email" class="search-box" placeholder=" " onchange="validateEmail(event)">
+                        <span id="placeholder" class="placeholder">EMAIL</span>
                     </div>
                     <button type="submit" class="search-button">GO!</button>
                 </form>
