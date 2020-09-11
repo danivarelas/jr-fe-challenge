@@ -4,6 +4,7 @@
   "description": "Jr. FE Challenge",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,8 +16,5 @@
   "bugs": {
     "url": "https://github.com/danivarelas/jr-fe-challenge/issues"
   },
-  "homepage": "https://github.com/danivarelas/jr-fe-challenge#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+  "homepage": "https://github.com/danivarelas/jr-fe-challenge#readme"
 }

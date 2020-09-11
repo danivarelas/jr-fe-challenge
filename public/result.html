@@ -10,7 +10,7 @@
     <nav class="navbar">
         <div class="navbar-content">
             <div class="navbar-logo">
-                <img src="images/PNGs/Logo@2x.png" class="logo"/>
+                <a href="index.html"><img src="images/PNGs/Logo@2x.png" class="logo"/></a>
             </div>
             <div class="navbar-icons">
                 <img src="images/PNGs/icn_search@2x.png" class="icon"/>
@@ -19,36 +19,43 @@
         </div>
     </nav>
     
-    <div class="result-container">
+    <div class="information-container">
         <div class="title-container">
-            <h1>Result</h1>
-            <p class="description">Look at the result below to see the details of the person you’re searched for.</p>
+            <div class="content">
+                <h1 class="title title-blue">Result</h1>
+                <p class="description description-black">Look at the result below to see the details of the person you’re searched for.</p>
+            </div>
         </div>
-        <div class="card">
-            <div>
-                <div class="card-title">
-                    <h3>John Smith, 35</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="card-body">
-                    <div class="info-field">
-                        <h4>Address</h4>
+        <div class="card-container">
+            <div class="card-content">
+                <div class="card">
+                    <div class="card-icon">
+                        <img src="images/PNGs/icn_person@2x.png" class="icon" />
+                    </div>
+                    <div class="card-title">
+                        <h3>John Smith, 35</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-                    <div class="info-field">
-                        <h4>Phone Numbers</h4>
-                        <p>(555) 555-5555</p>
-                        <p>(555) 555-5555</p>
-                        <p>(555) 555-5555</p>
-                    </div>
-                    <div class="info-field">
-                        <h4>Email</h4>
-                        <p>loremipsum@dolorsit.com</p>
-                    </div>
-                    <div class="info-field">
-                        <h4>Relatives</h4>
-                        <p>Jane Smith</p>
-                        <p>John Smith Jr</p>
+                    <div class="card-body">
+                        <div class="info-field">
+                            <h4>Address</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="info-field">
+                            <h4>Phone Numbers</h4>
+                            <p>(555) 555-5555</p>
+                            <p>(555) 555-5555</p>
+                            <p>(555) 555-5555</p>
+                        </div>
+                        <div class="info-field">
+                            <h4>Email</h4>
+                            <p>loremipsum@dolorsit.com</p>
+                        </div>
+                        <div class="info-field">
+                            <h4>Relatives</h4>
+                            <p>Jane Smith</p>
+                            <p>John Smith Jr</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -90,7 +97,7 @@
             </div>
         </div>
     </footer>
-    
+
     <script src="/__/firebase/7.19.1/firebase-app.js"></script>
     <script src="/__/firebase/init.js"></script>
     <script src="index.js"></script>

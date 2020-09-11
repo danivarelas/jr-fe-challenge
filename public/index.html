@@ -12,7 +12,7 @@
     <nav class="navbar">
         <div class="navbar-content">
             <div class="navbar-logo">
-                <img src="images/PNGs/Logo@2x.png" class="logo" />
+                <a href="index.html"><img src="images/PNGs/Logo@2x.png" class="logo"/></a>
             </div>
             <div class="navbar-icons">
                 <img src="images/PNGs/icn_search@2x.png" class="icon" />
@@ -29,9 +29,9 @@
                     photos and online profiles. See what you find!</p>
             </div>
             <div class="search-bar">
-                <form class="flex-form">
+                <form class="flex-form" onsubmit="validateEmail(event)">
                     <div class="search-box-container">
-                        <input type="email" class="search-box" placeholder=" ">
+                        <input id="email" type="email" class="search-box" placeholder=" ">
                         <span class="placeholder">EMAIL</span>
                     </div>
                     <button type="submit" class="search-button">GO!</button>
