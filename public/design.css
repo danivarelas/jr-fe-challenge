@@ -221,7 +221,7 @@ body {
     background-color: #F6BC25;
 }
 
-.notice {
+.notice-message {
     vertical-align: middle;
     display: inline;
     color: #F6BC25;
@@ -396,14 +396,17 @@ body {
 
     .search-box {
         display: inline;
+        
     }
 
     .search-button {
+        margin-top: 1em;
         width: 100%;
         padding: 0.8em;
     }
 
     .features-grid {
+        padding-right: 1em;
         display: flex;
         flex-wrap: wrap;
     }
@@ -428,19 +431,31 @@ body {
     }
 
     .footer-content {
+        padding: 0 1em;
         display: grid;
         text-align: center;
         margin-bottom: 1em;
     }
 
+    .icon.lock {
+        display: inline-block;
+    }
+
+    .notice {
+        display: flex;
+    }
+
+    .notice-message {
+        display: inline-block;
+        margin: 0 0.5em;
+    }
+
     .footer-description {
-        margin: 0 1em;
         text-align: left;
         grid-row: 1;
     }
     
     .footer-terms {
-        margin: 0 1em;
         display: inline-flex;
         justify-content: center;
         width: 100%;
