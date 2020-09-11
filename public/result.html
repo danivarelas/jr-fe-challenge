@@ -3,10 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/design.css"/>
+    <link rel="stylesheet" type="text/css" href="./design.css"/>
     <title>Result Page</title>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="navbar-logo">
+                <img src="./images/PNGs/Logo@2x.png" class="logo"/>
+            </div>
+            <div class="navbar-icons">
+                <img src="./images/PNGs/icn_search@2x.png" class="icon"/>
+                <img src="./images/PNGs/icn_person@2x.png" class="icon"/>
+            </div>
+        </div>
+    </nav>
+    
     <div class="result-container">
         <div class="title-container">
             <h1>Result</h1>
@@ -43,15 +55,24 @@
         </div>
     </div>
     <div class="search-container">
-        <div class="title-container">
-            <h2>Can’t Find The Right Person?</h1>
-            <p class="description"><span>Try Again</span> - Make a new search</p>
-        </div>
-        <div class="search-bar">
-            <form>
-                <input type="email" placeholder="EMAIL">
-                <button type="submit">GO!</button>
-            </form>
+        <div class="content">
+            <div class="title-container">
+                <h2 class="title title-white">Can’t Find The Right Person?</h2>
+                <p class="description"><span class="description-gold">Try Again</span> - Make a new search</p>
+            </div>
+            <div class="search-bar">
+                <form class="flex-form">
+                    <div class="search-box-container">
+                        <input type="email" class="search-box" placeholder=" ">
+                        <span class="placeholder">EMAIL</span>
+                    </div>
+                    <button type="submit" class="search-button">GO!</button>
+                </form>
+                <div>
+                    <img src="./images/PNGs/lock@2x.png" class="icon lock"/>
+                <p class="notice">Enter Any Email Address. They won't be notified.</p>
+                </div>
+            </div>
         </div>
     </div>
     <footer class="footer">
