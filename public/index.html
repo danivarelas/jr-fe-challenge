@@ -10,20 +10,36 @@
 
 <body>
     <nav class="navbar">
-        <span><i></i></span>
-        <span><i></i></span>
-        <span><i></i></span>
-    </nav>
-    <div class="search-container">
-        <div class="title-container">
-            <h1>Search Any Email Address</h1>
-            <p class="description"><span>Start Here</span> - Look up the owner's name, photos and online profiles. See what you find!</p>
+        <div class="navbar-content">
+            <div class="navbar-logo">
+                <img src="/images/PNGs/Logo@2x.png" class="logo"/>
+            </div>
+            <div class="navbar-icons">
+                <img src="/images/PNGs/icn_search@2x.png" class="icon"/>
+                <img src="/images/PNGs/icn_person@2x.png" class="icon"/>
+            </div>
         </div>
-        <div class="search-bar">
-            <form>
-                <input type="email" placeholder="EMAIL">
-                <button type="submit">GO!</button>
-            </form>
+    </nav>
+    
+    <div class="search-container">
+        <div class="content">
+            <div class="title-container">
+                <h1 class="title title-white">Search Any Email Address</h1>
+                <p class="description"><span class="description-gold">Start Here</span> - Look up the owner's name, photos and online profiles. See what you find!</p>
+            </div>
+            <div class="search-bar">
+                <form class="flex-form">
+                    <div class="search-box-container">
+                        <input type="email" class="search-box" placeholder=" ">
+                        <span class="placeholder">EMAIL</span>
+                    </div>
+                    <button type="submit" class="search-button">GO!</button>
+                </form>
+                <div>
+                    <img src="/images/PNGs/lock@2x.png" class="icon lock"/>
+                <p class="notice">Enter Any Email Address. They won't be notified.</p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="information-container">
