@@ -14,9 +14,9 @@ body {
 
 .navbar-content {
     max-width: 980px;
-    padding: 0.8em 0;
+    padding: 0.8em 0.5em;
     display: inline-block;
-    width: 60%;
+    width: 70%;
 }
 
 .navbar-logo {
@@ -86,7 +86,7 @@ body {
     font-weight: bold;
 }
 
-.footer-terms-links a {
+a {
     text-decoration: none;
     color: #004A80;
 }
@@ -94,18 +94,18 @@ body {
 .search-container {
     background-color: #004A80;
     text-align: center;
-    padding: 5em 0;
+    padding: 3em 0;
 }
 
 .content {
     max-width: 980px;
     display: inline-block;
-    width: 60%;
+    width: 70%;
 }
 
 .title {
     font-size: 2.5em;
-    margin: 0;
+    margin: 0 0.5em;
 }
 
 .title-white {
@@ -186,8 +186,7 @@ body {
 .search-box:focus + span, .search-box:not(:placeholder-shown) + .placeholder {
     transform: translateY(-75%);
 }
-  
-  /* For IE Browsers*/
+
 .search-box:focus + span, .search-box:not(:-ms-input-placeholder) + .placeholder {
     transform: scale(0.75) translateY(-100%);
 }
@@ -196,7 +195,8 @@ body {
     border: 2px solid #F6BC25;
 }
 
-.search-box:invalid {
+.invalid {
+    border: none;
     border: 2px solid #DC0015;
 }
 
@@ -235,7 +235,7 @@ body {
 .information-container {
     background-image: linear-gradient(to bottom, #FFFFFF, #E6E6E6);
     text-align: center;
-    padding: 5em 0;
+    padding: 2em 0;
 }
 
 .description-grey {
@@ -302,7 +302,7 @@ body {
 .card-content {
     max-width: 980px;
     display: inline-block;
-    width: 60%;
+    width: 70%;
 }
 
 .card {
@@ -374,7 +374,7 @@ body {
 @media (min-width: 769px) and (max-width: 1024px) {
     .navbar-content, .content, .footer-content, .card-content {
         box-sizing: border-box;
-        width: 80%;    
+        width: 90%;    
     }
     
     .search-container, .information-container {
@@ -383,7 +383,7 @@ body {
     
     .search-bar {
         display: inline-block;
-        width: 80%;
+        width: 90%;
     }
     
     .search-button {
