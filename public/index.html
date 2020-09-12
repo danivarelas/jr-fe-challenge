@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="design.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Landing Page</title>
 </head>
 
@@ -31,7 +31,7 @@
             <div class="search-bar">
                 <form class="flex-form" onsubmit="submitEmail(event)">
                     <div class="search-box-container">
-                        <input id="email" type="email" class="search-box" placeholder=" " onchange="validateEmail(event)">
+                        <input id="email" type="email" class="search-box" placeholder=" " onchange="validateEmail(event)" required>
                         <span id="placeholder" class="placeholder">EMAIL</span>
                     </div>
                     <button type="submit" class="search-button">GO!</button>
@@ -73,6 +73,7 @@
     <script src="/__/firebase/7.19.1/firebase-app.js"></script>
     <script src="/__/firebase/init.js"></script>
     <script src="index.js"></script>
+    <script src="validate.js"></script>
 </body>
 
 </html>
