@@ -1,3 +1,4 @@
+const cors_api_url = 'https://cors-anywhere.herokuapp.com/';
 
 function createNumberedList() {
     let ul = document.getElementById("features-grid");
@@ -35,8 +36,7 @@ function submitEmail(e) {
 }
 
 function searchEmail(email) {
-    console.log("Searching for email...")
-    fetch(`https://ltv-data-api.herokuapp.com/api/v1/records.json?email=${email}`)
+    fetch(`${cors_api_url}https://ltv-data-api.herokuapp.com/api/v1/records.json?email=${email}`)
     .then(function(response) {
         return response.json();
     })

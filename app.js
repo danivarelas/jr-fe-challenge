@@ -9,4 +9,6 @@ app.get("/", function (request, response){
     response.sendFile(__dirname+"/index.html");
 });
 
-app.listen(process.env.PORT);
+app.listen(process.env.PORT || port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+});
