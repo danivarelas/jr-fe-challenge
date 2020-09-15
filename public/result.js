@@ -1,5 +1,7 @@
+const cors_api_url = 'https://cors-anywhere.herokuapp.com/';
+
 function searchEmail(email, search) {
-    fetch(`https://ltv-data-api.herokuapp.com/api/v1/records.json?email=${email}`)
+    fetch(`${cors_api_url}https://ltv-data-api.herokuapp.com/api/v1/records.json?email=${email}`)
     .then(function(response) {
         return response.json();
     })
